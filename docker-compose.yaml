@@ -30,7 +30,6 @@ services:
       - db
   db:
     image: mysql:8.0.19
-    command: 'mysqld --default-authentication-plugin=mysql_native_password'
     restart: always
     secrets:
       - db-password
