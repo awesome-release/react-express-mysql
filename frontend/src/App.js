@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [message, setMessage] = useState();
   useEffect(() => {
-    fetch("/api/")
+    fetch(process.env.REACT_APP_BACKEND_URL)
       .then(res => res.json())
       .then(res => setMessage(res.message))
       .catch(console.error);
