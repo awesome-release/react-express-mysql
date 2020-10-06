@@ -19,6 +19,12 @@ const app = express();
 
 app.use(morgan("common"));
 
+app.all('/', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+ });
+
 app.get("/", function(req, res, next) {
   database.raw('select VERSION() version')
     .then(([rows, columns]) => rows[0])
