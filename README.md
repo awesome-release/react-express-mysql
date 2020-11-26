@@ -1,3 +1,12 @@
+## Verified to work in Release
+This project was derived from the react-express-mysql project in [awesome-compose](https://github.com/docker/awesome-compose)
+
+No modifications were necessary for this project to run in Release.
+
+To make this project run in [Release](https://releaseapp.io), simply create a new application with this repository.
+
+There is a full walkthrough/tutorial of this application and how to build it with static javascript pused to a CDN on the Release documentation site. View [https://docs.releaseapp.io/examples/hybrid-docker-+-static-site-example](https://docs.releaseapp.io/examples/hybrid-docker-+-static-site-example)
+
 ## Compose sample application
 ### React application with a NodeJS backend and a MySQL database
 
