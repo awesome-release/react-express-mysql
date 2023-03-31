@@ -10,7 +10,7 @@ module.exports = {
     database: process.env.DATABASE_DB,
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD
-      ? readFileSync(process.env.DATABASE_PASSWORD)
+      ? readFileSync(process.env.DATABASE_PASSWORD).trim()
       : null
   },
   port: process.env.PORT || 8080
