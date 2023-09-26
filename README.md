@@ -1,3 +1,5 @@
+TEST
+
 ## Verified to work in Release
 This project was derived from the react-express-mysql project in [awesome-compose](https://github.com/docker/awesome-compose)
 
